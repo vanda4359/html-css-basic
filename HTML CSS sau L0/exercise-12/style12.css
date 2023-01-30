@@ -1,0 +1,159 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    color: #9a9a9a;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 2px 0 #ddd inset;
+    box-sizing: border-box;
+    /* font-size: 15px; */
+    font-size: 0.9rem;
+    padding-left: 20px;
+    width: 100%;
+}
+
+input[type="text"],
+input[type="email"] {
+    height: 40px;
+}
+
+textarea {
+    font-family: Helvetica, sans-serif;
+    padding-top: 10px;
+    height: 114px;
+    resize: none;
+}
+
+button {
+    background-color: #0cb8b6;
+    border: 1px solid #0cb8b6;
+    color: #fff;
+    cursor: pointer;
+    min-width: 135px;
+    padding: 11px 10px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #18ccca;
+}
+
+/* Layout */
+.exercise-12 {
+    margin: 30px auto;
+    max-width: 1140px;
+}
+
+h2 {
+    color: #222;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 42px;
+    position: relative;
+}
+
+.info {
+    float: left;
+    max-width: 380px;
+}
+
+/* Line cho h2 */
+.exercise-12 h2:after {
+    background-color: #ffb737;
+    bottom: -5px;
+    content: "";
+    display: block;
+    left: 0;
+    height: 3px;
+    width: 60px;
+    position: absolute;
+}
+
+h3 {
+    color: #222;
+    font-size: 1.35rem;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.contact-list {
+    max-width: 206px;
+}
+
+li {
+    line-height: 1.4;
+    margin-bottom: 36px;
+    display: flex;
+    align-items: center;
+}
+
+li i {
+    font-size: 1.7rem;
+    text-align: center;
+    width: 34px;
+    margin-right: 20px;
+}
+
+li a {
+    color: #9a9a9a;
+    text-decoration: none;
+}
+
+.contact-form {
+    float: right;
+    width: 750px;
+}
+
+.margin-bottom-15 {
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 11700px) {
+    .exercise-12 {
+        margin: auto 20px;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    h3 {
+        margin-bottom: 26px;
+    }
+
+    .contact-list {
+        max-width: 100%;
+    }
+
+    li {
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        float: none;
+        max-width: -webkit-fill-available;
+    }
+
+    .info {
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    button {
+        min-width: 100%;
+    }
+}

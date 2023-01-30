@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+}
+
+.A1 {
+    border: 3px solid aqua;
+    width: 1000px;
+    height: 2000px;
+}
+
+.A2 {
+    border: 3px solid antiquewhite;
+    box-sizing: border-box;
+    width: 500px;
+    height: 100px;
+    position:fixed; 
+    top:0px; 
+    z-index: 1;
+}
+
+.A3 {
+    border: 3px solid blueviolet;
+    box-sizing: border-box;
+    width: 500px;
+    height: 100px;
+    position: fixed; 
+    bottom:0px; 
+}
+
+.A4 {
+    border: 3px solid rgb(20, 80, 133);
+    box-sizing: border-box;
+    width: 900px;
+    height: 500px;
+    position: relative; 
+    top: 100px;
+}
+
+.A5 {
+    border: 3px solid brown;
+    box-sizing: border-box;
+    width: 600px;
+    height: 400px;
+    margin-left: 200px;
+    /* position: -webkit-sticky; */
+    position: sticky;
+    top: 150px
+}
+
+.A6 {
+    border: 3px solid blue;
+    box-sizing: border-box;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    left: 42%;
+    z-index: 0.8;
+}
+
+@media only screen and (max-width: 780px){
+    .A1 {
+        width: 500px;
+    }
+    .A2 .A3 {
+        width: 250px;
+    }
+    .A4 {
+        width: 450px;
+    }
+    .A5 {
+        width: 300px;
+    }
+}

@@ -1,0 +1,82 @@
+div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+span {
+    display: inline-block;
+    height: 30px;
+    padding-top: 10px;
+    margin-right: 15px; 
+}
+
+span:nth-child(odd) {
+    background-color: red;
+    width: 20px;
+    font-size: 10px;
+}
+
+span:nth-child(even) {
+    background-color: blue;
+    width: 30px;
+}
+
+@media only screen and (min-width: 320px) {
+    span:nth-child(odd) {
+        background-color: red;
+        width: 20px;
+    }
+
+    span:nth-child(even) {
+        background-color: blue;
+        width: 30px;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    span:nth-child(odd) {
+        background-color: yellow;
+        width: 20px;
+    }
+
+    span:nth-child(even) {
+        background-color: red;
+        width: 50px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    span:nth-child(odd) {
+        background-color: rgb(62, 87, 62);
+        width: 30px;
+    }
+
+    span:nth-child(even) {
+        background-color: yellow;
+        width: 40px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    span:nth-child(odd) {
+        background-color: yellow;
+        width: 30px;
+    }
+
+    span:nth-child(even) {
+        background-color: violet;
+        width: 40px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    span:nth-child(odd) {
+        background-color: violet;
+        width: 50px;
+    }
+
+    span:nth-child(even) {
+        background-color: pink;
+        width: 100px;
+    }
+}

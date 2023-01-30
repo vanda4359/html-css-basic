@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333;
+  font-family: Helvetica, sans-serif;
+  font-size: 1em;
+  text-align: -webkit-center;
+}
+
+/* Layout */
+.exercise-2 {
+  background-image: linear-gradient(0,
+      rgba(0, 0, 0, 0.638),
+      rgba(0, 0, 0, 0.282)),
+    url(../image/hinhanho.jpg);
+  color: #fff;
+  padding: 80px 20px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1240px;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+.btn button {
+  background-color: #e4553f;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  padding: 16px 14px;
+  cursor: pointer;
+  border: none;
+  box-shadow:1px 1px 1px 1px rgb(35, 33, 33);
+}
+
+button:hover {
+  background-color: #df3c23;
+}
